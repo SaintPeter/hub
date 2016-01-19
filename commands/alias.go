@@ -36,7 +36,7 @@ func alias(command *Command, args *Args) {
 	}
 
 	if shell == "" {
-		utils.Check(fmt.Errorf("Unknown shell"))
+		utils.Check(fmt.Errorf("Unknown shell: Set the SHELL enviornment variable or execute 'hub alies -s <shell name>'"))
 	}
 
 	shells := []string{"bash", "zsh", "sh", "ksh", "csh", "tcsh", "fish"}
